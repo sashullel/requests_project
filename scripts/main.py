@@ -33,6 +33,7 @@ def make_request(status_code) -> None:
 if __name__ == '__main__':
     status_codes = random.sample([status.value for status in HTTPStatus], 5)
     print(f'The status codes to be tested: {status_codes}')
+
     for code in status_codes:
         try:
             make_request(code)
